@@ -1,0 +1,320 @@
+# Copyright (C) 2026 QuickPay
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: QuickPay para WooCommerce 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/quickpay-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-08T18:32:18+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: quickpay-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: quickpay-woocommerce.php
+msgid "QuickPay para WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: quickpay-woocommerce.php
+msgid "https://docs.pagaconquickpay.com/"
+msgstr ""
+
+#. Description of the plugin
+#: quickpay-woocommerce.php
+msgid "Cobra en bolívares con enlaces de pago de QuickPay. El pedido se marca pagado sólo cuando QuickPay lo confirma."
+msgstr ""
+
+#. Author of the plugin
+#: quickpay-woocommerce.php
+#: includes/class-qp-gateway.php:25
+msgid "QuickPay"
+msgstr ""
+
+#. Author URI of the plugin
+#: quickpay-woocommerce.php
+msgid "https://pagaconquickpay.com/"
+msgstr ""
+
+#: includes/class-qp-api.php:70
+msgid "La llave de API de QuickPay no tiene el formato comercio:sk_test_… o comercio:sk_live_…."
+msgstr ""
+
+#. translators: 1: código HTTP, 2: código de error de la API.
+#: includes/class-qp-api.php:95
+#, php-format
+msgid "QuickPay respondió HTTP %1$d (%2$s)."
+msgstr ""
+
+#: includes/class-qp-api.php:104
+msgid "QuickPay respondió algo que no es JSON."
+msgstr ""
+
+#: includes/class-qp-cron.php:35
+msgid "Cada 10 minutos (QuickPay)"
+msgstr ""
+
+#: includes/class-qp-gateway.php:26
+msgid "Cobra en bolívares con un enlace de pago de QuickPay: tu cliente elige su banco y autoriza con la clave que le envía su banco."
+msgstr ""
+
+#: includes/class-qp-gateway.php:53
+msgid "Activar"
+msgstr ""
+
+#: includes/class-qp-gateway.php:55
+msgid "Activar QuickPay como método de pago"
+msgstr ""
+
+#: includes/class-qp-gateway.php:59
+msgid "Título"
+msgstr ""
+
+#: includes/class-qp-gateway.php:61
+msgid "Lo que ve el cliente al elegir cómo pagar."
+msgstr ""
+
+#: includes/class-qp-gateway.php:62
+msgid "Paga con QuickPay"
+msgstr ""
+
+#: includes/class-qp-gateway.php:66
+msgid "Descripción"
+msgstr ""
+
+#: includes/class-qp-gateway.php:68
+msgid "Texto que acompaña al método de pago en la caja."
+msgstr ""
+
+#: includes/class-qp-gateway.php:69
+msgid "Paga en bolívares desde tu banco. Te llevaremos a la página segura de QuickPay para completar el pago."
+msgstr ""
+
+#: includes/class-qp-gateway.php:73
+msgid "Llave de API"
+msgstr ""
+
+#: includes/class-qp-gateway.php:75
+msgid "Formato comercio:sk_test_… (prueba) o comercio:sk_live_… (producción). La sacas en tu portal, en Integraciones › Llaves de API. El modo lo decide la llave: con sk_test_ nunca se mueve dinero."
+msgstr ""
+
+#: includes/class-qp-gateway.php:79
+msgid "Secreto del webhook"
+msgstr ""
+
+#. translators: %s: URL del webhook de la tienda.
+#: includes/class-qp-gateway.php:83
+#, php-format
+msgid "En tu portal, Integraciones › Webhooks › Agregar URL, registra esta dirección con el evento link.pagado: %s — y pega aquí el secreto que te muestra (se muestra una sola vez)."
+msgstr ""
+
+#: includes/class-qp-gateway.php:89
+msgid "Moneda de la tienda"
+msgstr ""
+
+#: includes/class-qp-gateway.php:91
+msgid "QuickPay cobra sólo en bolívares. Si tu tienda vende en otra moneda, el total se multiplica por la tasa que escribas abajo. Este plugin no consulta ninguna tasa por su cuenta: la decides tú y la mantienes al día."
+msgstr ""
+
+#: includes/class-qp-gateway.php:94
+msgid "Mi tienda ya vende en bolívares (VES)"
+msgstr ""
+
+#: includes/class-qp-gateway.php:95
+msgid "Mi tienda vende en otra moneda: usar una tasa fija"
+msgstr ""
+
+#: includes/class-qp-gateway.php:99
+msgid "Tasa fija (Bs por 1 unidad de la moneda de la tienda)"
+msgstr ""
+
+#: includes/class-qp-gateway.php:101
+msgid "Sólo si elegiste tasa fija. Ejemplo: si vendes en USD y escribes 40,00, un pedido de 10 USD se cobra Bs 400,00. Se guarda en cada pedido la tasa usada."
+msgstr ""
+
+#: includes/class-qp-gateway.php:106
+msgid "Vigencia del enlace (horas)"
+msgstr ""
+
+#: includes/class-qp-gateway.php:108
+msgid "De 1 a 720. Mientras el enlace esté vigente, WooCommerce no cancela el pedido por falta de pago."
+msgstr ""
+
+#: includes/class-qp-gateway.php:117
+msgid "Registro"
+msgstr ""
+
+#: includes/class-qp-gateway.php:119
+msgid "Guardar un registro detallado (WooCommerce › Estado › Registros, fuente \"quickpay\")"
+msgstr ""
+
+#: includes/class-qp-gateway.php:121
+msgid "Los errores se registran siempre. La llave y el secreto nunca se escriben en el registro."
+msgstr ""
+
+#: includes/class-qp-gateway.php:130
+msgid "Modo prueba: la llave es sk_test_. Los cobros no mueven dinero. En la página de pago usa cualquier banco, teléfono y cédula de ejemplo y cualquier clave de 8 dígitos."
+msgstr ""
+
+#: includes/class-qp-gateway.php:132
+msgid "Modo producción: la llave es sk_live_. Los cobros son reales."
+msgstr ""
+
+#: includes/class-qp-gateway.php:134
+msgid "La llave no tiene el formato comercio:sk_test_… o comercio:sk_live_…."
+msgstr ""
+
+#: includes/class-qp-gateway.php:137
+msgid "Tu sitio no usa https://. QuickPay sólo envía webhooks y regresa al cliente a direcciones https://."
+msgstr ""
+
+#: includes/class-qp-gateway.php:146
+msgid "La tasa debe ser un número mayor que cero (por ejemplo 40,00)."
+msgstr ""
+
+#: includes/class-qp-gateway.php:201
+msgid "No encontramos el pedido."
+msgstr ""
+
+#: includes/class-qp-gateway.php:233
+msgid "No pudimos calcular el monto en bolívares de tu pedido. Elige otro método de pago o contacta a la tienda."
+msgstr ""
+
+#. translators: 1: número de pedido, 2: nombre de la tienda.
+#: includes/class-qp-gateway.php:262
+#, php-format
+msgid "Pedido #%1$s · %2$s"
+msgstr ""
+
+#: includes/class-qp-gateway.php:294
+#: includes/class-qp-gateway.php:317
+msgid "No pudimos iniciar el pago con QuickPay. Intenta de nuevo en unos minutos o elige otro método de pago."
+msgstr ""
+
+#. translators: 1: monto en Bs, 2: id del enlace.
+#: includes/class-qp-gateway.php:323
+#, php-format
+msgid "Enlace de pago QuickPay creado por Bs %1$s (enlace %2$s)."
+msgstr ""
+
+#. translators: 1: tasa, 2: moneda de la tienda.
+#: includes/class-qp-gateway.php:330
+#, php-format
+msgid "Tasa fija usada: Bs %1$s por 1 %2$s."
+msgstr ""
+
+#: includes/class-qp-gateway.php:336
+msgid "[PRUEBA: no mueve dinero]"
+msgstr ""
+
+#: includes/class-qp-gateway.php:339
+msgid "(QuickPay devolvió el enlace que ya existía para este pedido.)"
+msgstr ""
+
+#: includes/class-qp-gateway.php:403
+msgid "Recibimos tu pago y la tienda lo está revisando. Te avisaremos."
+msgstr ""
+
+#: includes/class-qp-gateway.php:405
+msgid "¡Gracias! Tu pago fue confirmado."
+msgstr ""
+
+#: includes/class-qp-gateway.php:411
+msgid "Tu banco está confirmando el pago. Te avisaremos. No hace falta que pagues otra vez."
+msgstr ""
+
+#: includes/class-qp-gateway.php:415
+msgid "Todavía no recibimos tu pago."
+msgstr ""
+
+#: includes/class-qp-gateway.php:417
+msgid "Pagar con QuickPay"
+msgstr ""
+
+#: includes/class-qp-gateway.php:419
+msgid "Intentar de nuevo"
+msgstr ""
+
+#: includes/class-qp-pedidos.php:134
+msgid "[PRUEBA: no se movió dinero]"
+msgstr ""
+
+#. translators: 1: monto, 2: id del enlace, 3: referencia, 4: etiqueta de prueba.
+#: includes/class-qp-pedidos.php:145
+#, php-format
+msgid "ATENCIÓN: QuickPay confirmó OTRO pago de Bs %1$s para este pedido, ya pagado, por el enlace %2$s (referencia %3$s). Revisa y devuelve el excedente al cliente.%4$s"
+msgstr ""
+
+#. translators: %s: referencia bancaria.
+#: includes/class-qp-pedidos.php:157
+#, php-format
+msgid "Referencia bancaria del pago QuickPay: %s."
+msgstr ""
+
+#. translators: 1: monto pagado, 2: monto del enlace.
+#: includes/class-qp-pedidos.php:172
+#, php-format
+msgid "QuickPay informó un pago de Bs %1$s, pero el enlace se creó por Bs %2$s. El pedido queda en espera para revisión manual."
+msgstr ""
+
+#. translators: %s: id del enlace.
+#: includes/class-qp-pedidos.php:186
+#, php-format
+msgid "Se recibió la confirmación de un pago de PRUEBA (enlace %s), pero la tienda ya usa la llave de producción. No se marca pagado: un cobro de prueba nunca mueve dinero."
+msgstr ""
+
+#. translators: 1: monto pagado, 2: id del enlace, 3: monto vigente.
+#: includes/class-qp-pedidos.php:206
+#, php-format
+msgid "El cliente pagó Bs %1$s con un enlace anterior (%2$s), pero el monto vigente del pedido es Bs %3$s. El pedido queda en espera para revisión manual."
+msgstr ""
+
+#. translators: 1: monto, 2: referencia, 3: id del enlace, 4: transacción, 5: origen, 6: etiqueta de prueba.
+#: includes/class-qp-pedidos.php:226
+#, php-format
+msgid "Pago confirmado por QuickPay: Bs %1$s. Referencia bancaria: %2$s. Enlace: %3$s. Transacción: %4$s. Confirmado por: %5$s.%6$s"
+msgstr ""
+
+#: includes/class-qp-pedidos.php:228
+msgid "no disponible en la consulta"
+msgstr ""
+
+#: includes/class-qp-pedidos.php:236
+msgid "El pedido estaba cancelado o fallido cuando llegó el pago. Se reactivó como pagado: revisa el inventario antes de despachar."
+msgstr ""
+
+#: includes/class-qp-pedidos.php:262
+msgid "El enlace de pago QuickPay venció sin pagarse."
+msgstr ""
+
+#: includes/class-qp-pedidos.php:263
+msgid "El enlace de pago QuickPay fue cancelado sin pagarse."
+msgstr ""
+
+#: includes/class-qp-pedidos.php:272
+msgid "El banco está confirmando el pago de QuickPay. No le pidas al cliente que pague de nuevo: se seguirá consultando."
+msgstr ""
+
+#: includes/class-qp-pedidos.php:309
+msgid "aviso firmado (webhook)"
+msgstr ""
+
+#: includes/class-qp-pedidos.php:311
+msgid "consulta periódica a QuickPay"
+msgstr ""
+
+#: includes/class-qp-pedidos.php:313
+msgid "consulta a QuickPay desde la página de confirmación"
+msgstr ""
+
+#: quickpay-woocommerce.php:55
+msgid "QuickPay para WooCommerce necesita que WooCommerce esté activo."
+msgstr ""
+
+#: quickpay-woocommerce.php:94
+msgid "Ajustes"
+msgstr ""
